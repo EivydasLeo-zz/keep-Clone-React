@@ -9,7 +9,7 @@
 5. Navbar jsx + css kad atrodytu panasiai jame turim logo nuoroda, ivesties lauka
 ir viena ikona desineje
 
-6. Aside viduje kiekviena nuoroda yra _Link komponentas kuris gauna per props 
+6. Aside viduje kiekviena nuoroda yra myLink komponentas kuris gauna per props 
 kokia ikona parodyti, kur turetu vesti ir tarp pradzios ir pabaigos tabu koks turetu buti 
 nuorodos tekstas
 

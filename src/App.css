@@ -2,6 +2,23 @@ div {
   border: 1px solid #000;
 }
 
+.navbar {
+  grid-area: header;
+}
+.aside {
+  grid-area: aside;
+}
+.add-note {
+  grid-area: add-note;
+}
+.note-list {
+  grid-area: note-list;
+}
+
 .App {
   display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'aside add-note add-note add-note add-note '
+    'aside note-list note-list note-list note-list ';
 }
