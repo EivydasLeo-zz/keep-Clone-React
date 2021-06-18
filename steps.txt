@@ -1,1 +1,5 @@
 1. cleanup starter code
+
+2. create appNavbar, appAside, appAddNote, appNoteList 
+
+3. importuoti i app.jsx ir pamatyti psl
