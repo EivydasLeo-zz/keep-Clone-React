@@ -1,11 +1,21 @@
 import React, { Component } from 'react';
 
+import './style.css';
+
 class AppNavbar extends Component {
   state = {};
   render() {
     return (
       <header className="navbar">
-        <h2>Navbar comp</h2>
+        <a href="/">
+          <strong>Keep</strong>Clone
+        </a>
+        <div className="search">
+          <input type="search" placeholder="Search" />
+        </div>
+        <div>
+          <i className="fa fa-pencil"></i>
+        </div>
       </header>
     );
   }
