@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// font awesome 4.7
 import 'font-awesome/css/font-awesome.css';
 
 ReactDOM.render(
