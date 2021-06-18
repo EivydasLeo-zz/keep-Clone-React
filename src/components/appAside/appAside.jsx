@@ -4,7 +4,7 @@ class AppAside extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div className="aside">
         <h2>Aside</h2>
       </div>
     );

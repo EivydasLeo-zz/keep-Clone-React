@@ -4,7 +4,7 @@ class AppNoteList extends Component {
   state = {};
   render() {
     return (
-      <div>
+      <div className="note-list">
         <h2>NoteList</h2>
       </div>
     );
