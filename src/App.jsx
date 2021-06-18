@@ -8,12 +8,18 @@ class App extends Component {
   state = {
     notes: [],
   };
+
+  handleNewNote = (newNote) => {
+    console.log('adding new note');
+    console.log(newNote);
+  };
+
   render() {
     return (
       <div className="App">
         <AppNavbar />
         <AppAside />
-        <AppAddNote />
+        <AppAddNote onNewNote={this.handleNewNote} />
         <AppNoteList />
       </div>
     );

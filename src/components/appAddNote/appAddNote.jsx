@@ -11,7 +11,8 @@ class AppAddNote extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault();
-    console.log('siusti');
+
+    this.props.onNewNote(this.state.newNote);
   };
 
   syncInput = (e) => {
@@ -24,13 +25,13 @@ class AppAddNote extends Component {
     return (
       <div className="add-note">
         <div className="inner-note">
-          <form onSubmit={this.handleSubmit}>
+          <form onSubmit={this.handleSubmit} autoComplete="off">
             <input
               value={newNote.title}
               onChange={this.syncInput}
               className="input"
-              type="text"
               name="title"
+              type="text"
               placeholder="Title"
             />
             <textarea
