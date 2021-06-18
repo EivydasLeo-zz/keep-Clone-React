@@ -5,13 +5,28 @@ import AppAddNote from './components/appAddNote/appAddNote';
 import AppNoteList from './components/appNoteList/appNoteList';
 import './App.css';
 class App extends Component {
-  state = {};
+  state = {
+    notes: [],
+    noteId: 1,
+  };
+
+  handleNewNote = (newNote) => {
+    // {_id, title, body, isPinned}
+    const newNoteObj = this.createNewNote(newNote);
+    const notesCopy = [...this.state.notes, newNoteObj];
+    this.setState({ notes: notesCopy, noteId: this.state.noteId + 1 });
+  };
+
+  createNewNote(newNote) {
+    return { _id: this.state.noteId, ...newNote, isPinned: false };
+  }
+
   render() {
     return (
       <div className="App">
         <AppNavbar />
         <AppAside />
-        <AppAddNote />
+        <AppAddNote onNewNote={this.handleNewNote} />
         <AppNoteList />
       </div>
     );
