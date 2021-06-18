@@ -27,7 +27,7 @@ class App extends Component {
         <AppNavbar />
         <AppAside />
         <AppAddNote onNewNote={this.handleNewNote} />
-        <AppNoteList />
+        <AppNoteList notes={this.state.notes} />
       </div>
     );
   }
