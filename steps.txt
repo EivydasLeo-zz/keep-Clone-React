@@ -23,5 +23,11 @@ yra patalpinami {_id, title, body, isPinned} (App state bus tiesos saltinis)
 naujo note. 
 
 
+8. Note list
+
+8.1 susikurti korteles komponenta 
+
+8.2 sugeneruoti korteles is notes saraso notelist elemente
+
 
 
