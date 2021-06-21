@@ -30,4 +30,22 @@ naujo note.
 8.2 sugeneruoti korteles is notes saraso notelist elemente
 
 
+9. Paspaudus ant korteles ji atsidaro viduryje puslapio ir galima pakeisti jos
+title ar body reiksme 
+
+9.1. sukurti komponenta kuris pasirodys kai paspausim kortele. Arba pernaudoti 
+esama tinkama komponenta su siek tiek kitokiu stilium
+
+9.2 padaryti kad paspaudus bet kuria is korteliu atisdarytu naujas komponentas
+
+9.3 uzkrauti i naujo komponentu ivesties laukus informacija is to komponento kuris
+buvo paspaustas 
+
+10. oneNote kompenente prideti istrynimo mygtuka ir padaryti kad veiktu
+
+11. oneNote komponente padaryti kad veiktu pin ikoneles mygtukas kuris padarytu 
+ta komponenta prisegta virsuje. jis turi keisti isPinned reiksme ir pagal tai 
+atvaizduoti. 
+
+
 

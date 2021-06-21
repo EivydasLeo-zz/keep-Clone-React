@@ -41,6 +41,7 @@ class AppAddNote extends Component {
               className="input textarea"
               name="body"
               placeholder="Take a note..."
+              // rows="1"
             ></textarea>
             <button className="link-like" type="submit">
               Close
