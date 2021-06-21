@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from '../common/card/card';
 import './style.css';
 
 class AppAddNote extends Component {
@@ -25,7 +26,7 @@ class AppAddNote extends Component {
     const { newNote } = this.state;
     return (
       <div className="add-note">
-        <div className="inner-note">
+        <Card raised>
           <form onSubmit={this.handleSubmit} autoComplete="off">
             <input
               value={newNote.title}
@@ -47,7 +48,7 @@ class AppAddNote extends Component {
               Close
             </button>
           </form>
-        </div>
+        </Card>
       </div>
     );
   }

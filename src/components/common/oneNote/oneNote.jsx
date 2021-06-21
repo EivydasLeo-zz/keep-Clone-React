@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from '../card/card';
 import ourStyles from './style.module.css';
 
 class OneNote extends Component {
@@ -6,10 +7,10 @@ class OneNote extends Component {
   render() {
     const { title, body } = this.props.note;
     return (
-      <div className={ourStyles.card}>
+      <Card>
         <h3>{title}</h3>
         <p>{body}</p>
-      </div>
+      </Card>
     );
   }
 }
