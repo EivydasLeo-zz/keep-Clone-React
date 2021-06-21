@@ -10,6 +10,7 @@ class App extends Component {
     notes: [],
     noteId: 1,
     showModal: false,
+    selectedNote: {},
   };
 
   handleNewNote = (newNote) => {
@@ -23,19 +24,27 @@ class App extends Component {
     return { _id: this.state.noteId, ...newNote, isPinned: false };
   }
 
-  handleModal = () => {
-    console.log('modal ???');
+  handleModal = (id) => {
+    if (id) {
+      console.log('id gavom');
+      const found = this.state.notes.find((n) => n._id === id);
+      this.setState({ selectedNote: found });
+    }
+
+    console.log('modal ??? id:', id);
     this.setState({ showModal: !this.state.showModal });
   };
 
   render() {
     return (
       <div className="App">
-        {this.state.showModal && <Modal onToggleModal={this.handleModal}></Modal>}
+        {this.state.showModal && (
+          <Modal note={this.state.selectedNote} onToggleModal={this.handleModal}></Modal>
+        )}
         <AppNavbar />
         <AppAside />
         <AppAddNote onNewNote={this.handleNewNote} />
-        <AppNoteList notes={this.state.notes} />
+        <AppNoteList onToggleModal={this.handleModal} notes={this.state.notes} />
       </div>
     );
   }

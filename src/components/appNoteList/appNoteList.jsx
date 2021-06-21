@@ -9,7 +9,7 @@ class AppNoteList extends Component {
     return (
       <div className="note-list">
         {this.props.notes.map((n) => (
-          <OneNote note={n} key={n._id} />
+          <OneNote onToggleModal={this.props.onToggleModal} note={n} key={n._id} />
         ))}
       </div>
     );
