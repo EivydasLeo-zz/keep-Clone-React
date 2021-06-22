@@ -23,7 +23,7 @@ class App extends Component {
   componentDidMount() {
     const notesFromStorage = localStorage.getItem('notes');
     const noteId = +localStorage.getItem('lastId');
-    console.log('notesFromStorage', notesFromStorage);
+    // console.log('notesFromStorage', notesFromStorage);
     if (notesFromStorage) {
       this.setState({ notes: JSON.parse(notesFromStorage), noteId });
     }
@@ -31,7 +31,7 @@ class App extends Component {
   }
 
   componentDidUpdate(nextProps, nextState) {
-    console.log('did update');
+    // console.log('did update');
     // store to local storage
     localStorage.setItem('notes', JSON.stringify(this.state.notes));
     localStorage.setItem('lastId', this.state.noteId);

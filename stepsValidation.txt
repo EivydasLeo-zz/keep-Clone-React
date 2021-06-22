@@ -9,6 +9,7 @@ body: required, min 5,
 4. validate using Joi and console log results
 
 5. create errors property in state and add errors to it according to fields 
+sukurti errors savybe state ir sudeti i ja klaidas pagal ivesties laukus
 
 6. display errors for both fields
 
