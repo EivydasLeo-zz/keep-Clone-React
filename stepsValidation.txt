@@ -1,0 +1,17 @@
+1. install joi-browser import in component
+
+2. create schema 
+title: required, letters and numbers, min 3, max 20, 
+body: required, min 5, 
+
+3. create validate method
+
+4. validate using Joi and console log results
+
+5. create errors property in state and add errors to it according to fields 
+
+6. display errors for both fields
+
+7. submit data only if there are no errors
+
+8. display erorrs in real time 
